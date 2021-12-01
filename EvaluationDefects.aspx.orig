@@ -1,0 +1,347 @@
+﻿<%@ Page Title="Оценка дефектов" Language="C#" MasterPageFile="~/System/TopMasterPage.master"
+    AutoEventWireup="true" CodeFile="EvaluationDefects.aspx.cs" Inherits="Modules_Evaluation_defects_EvaluationDefects"
+    EnableViewState="true" culture="auto" meta:resourcekey="PageResource1" uiculture="auto" %>
+
+<%@ Register Assembly="Telerik.Web.UI" Namespace="Telerik.Web.UI" TagPrefix="telerik" %>
+<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="Server">
+    <title>Оценка дефектов</title>
+    <style type="text/css">
+        .fsSetParam {
+            width: auto !important;
+            padding-top: 0 !important;
+            margin-top: 0 !important;
+        }
+
+        fieldset.fsSetParam > fieldset {
+            margin-top: 7px;
+        }
+        .typeDefect {
+            margin-top: 7px;
+        }
+        #ctl00_Body_grdDefects .rgAdvPart {
+           display: none !important;
+        }
+        table.resultTable tr td {
+            padding: 2px;
+        }
+        fieldset {
+            background-color: #f9f9f9;
+        }
+        .RadGrid {
+            background-color: #e5e5e5 !important;
+        }
+<<<<<<< local
+
+        .divInfo {
+            position: absolute; 
+            background: url(../../Images/legend-24.png); 
+            background-position: left top; 
+            background-repeat: no-repeat; 
+            width: 40px; 
+            height: 40px; 
+            left: 7px; 
+            top: 10px;
+
+            -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+            filter: alpha(opacity=50);
+            -moz-opacity: 0.5;
+            -khtml-opacity: 0.5;
+            opacity: 0.5;
+        }
+        .divInfo:hover {
+            -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+            filter: alpha(opacity=100);
+            -moz-opacity: 1;
+            -khtml-opacity: 1;
+            opacity: 1;
+        }
+=======
+        /* заменяет дефолтный градиент выделения ячейки телерика на одноцветное*/
+        #<%=grdDefects.ClientID%> .rgSelectedRow, #<%=grdDefects.ClientID%> .rgSelectedRow > td
+        {
+            background-color: #FAE185 !important;
+            background-image: none !important;
+        }
+>>>>>>> other
+    </style>
+       <script type="text/javascript">
+
+           window.ready = ResizeRadGrid();
+           window.onresize = function (event) {
+               ResizeRadGrid();
+           };
+
+           function ResizeRadGrid() {
+               var screenHeight = $(window).height();
+               var contentHeight = 300;
+               var conInGridHeight = 55;
+               var radGridHeight = screenHeight - contentHeight;
+
+               if ($('.rgDataDiv').length > 0) {
+                   radGridHeight = radGridHeight - conInGridHeight;
+                   $('.rgDataDiv').css('height', radGridHeight + 'px');
+               } else {
+
+                   $('#<%=grdDefects.ClientID %>').css('height', radGridHeight + 'px');
+               }
+
+           }
+
+           function CleanDefect() {
+               $("#<%=grdDefects.ClientID %>").remove();
+               $("#<%=txtDefectCount.ClientID %>").val("");
+               $("#<%=ImagePrev.ClientID %>").attr('src', 'Images/defect_type/empty.gif');
+               $("#<%=txtNSIZE_PRECISION.ClientID %>").text("");
+               $("#<%=txtDDATA_USTR_DEFECT.ClientID %>").text("");
+               $("#<%=txtcMETOD_USTR_DEFECT_KEY.ClientID %>").text("");
+               $("#<%=txtTempr.ClientID %>").text("");
+               $("#<%=txtPress.ClientID %>").text("");
+               $("#<%=txtndsAllow.ClientID %>").text("");
+               $("#<%=txtNdsReal.ClientID %>").text("");
+           }
+       </script>
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="Body" runat="Server">
+    <div class="pageContent" style="width:100%; height:100%;">
+        <asp:Label runat="server" ID="lblView2Err"></asp:Label>
+        <table style="width: 100%; height:100%; vertical-align: top;"  class="commonTableClass">
+            <tr>
+                <td valign="top" style="width: 360px;">
+                    <asp:UpdatePanel ID="UpdatePanel1" runat="server" UpdateMode="Conditional"  >
+                        <ContentTemplate>
+                            <fieldset class="fsSetParam">
+                                <legend class="legendtext"><%=GetLocalResourceObject("fldtChooseArea") %></legend>
+                                <table class="setterValues" width="100%">
+                                    <tr>
+                                        <td style="width: 50px;">
+                                            <asp:Label Font-Bold="True" runat="server" Text="МГ: " meta:resourcekey="Label1Resource1"/>
+                                        </td>
+                                        <td>
+                                            <telerik:RadComboBox ID="DDLMG" runat="server" AutoPostBack="True" Width="100%"
+                                                                 OnSelectedIndexChanged="DDLMG_SelectedIndexChanged"  meta:resourcekey="DDLMGResource1"/>  
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <asp:Label Font-Bold="True" runat="server" Text="Нить: " meta:resourcekey="Label37Resource1"/>
+                                        </td>
+                                        <td>
+                                            <telerik:RadComboBox ID="DDLThread" runat="server" AutoPostBack="True" Enabled="False" Width="100%"
+                                                                 meta:resourcekey="DDLThreadResource1" OnSelectedIndexChanged="DDLThread_SelectedIndexChanged" />
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <asp:Label Font-Bold="True" runat="server" Text="Км начала: " meta:resourcekey="Label84Resource1"></asp:Label>
+                                        </td>
+                                        <td>
+                                            <telerik:RadTextBox ID="txtSharedKmStart" runat="server" ReadOnly="True" Width="49%" meta:resourcekey="txtSharedKmStartResource1"/>
+                                            <telerik:RadTextBox ID="txtSharedKmEnd" runat="server" ReadOnly="True" Width="49%" meta:resourcekey="txtSharedKmEndResource1"/>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td></td>
+                                        <td>
+                                            <telerik:RadButton runat="server" Text="Отобрать дефекты" OnClick="SelectDefect_Click" Width="100%"
+                                                               PostBackUrl="~/Modules/Evaluation_defects/EvaluationDefects.aspx" meta:resourcekey="Button4Resource1" />
+                                        </td>
+                                    </tr>
+                                </table>
+                            </fieldset>
+
+                            <fieldset class="fsSetParam" style="margin-top: 7px !important;">
+                                <legend class="legendtext"><%=GetLocalResourceObject("fldtDefectsTable") %></legend>
+                                <table style="width: 100%; height:100%; vertical-align: top;">
+                                    <tr style="display: none;">
+                                        <td>
+                                            <table style="width: 100%;">
+                                                <tr>
+                                                    <td>
+                                                        <asp:Label runat="server" Font-Bold="True" Text="Дефекты" Visible="False" meta:resourcekey="Label10Resource1"></asp:Label>
+                                                    </td>
+                                                    <td style="padding-bottom: 3px;">
+                                                        <telerik:RadComboBox ID="DDLFiltr" runat="server" AutoPostBack="True" Visible="False" OnSelectedIndexChanged="DDLFiltr_SelectedIndexChanged" meta:resourcekey="DDLFiltrResource1">
+                                                            <Items>
+                                                        
+                                                                <telerik:RadComboBoxItem Selected="True" Value="1" meta:resourcekey="ListItemResource7"/>
+                                                                <telerik:RadComboBoxItem Value="2" meta:resourcekey="ListItemResource8"/>
+                                                                <telerik:RadComboBoxItem Value="3" meta:resourcekey="ListItemResource9"/>
+                                                                <telerik:RadComboBoxItem Value="4" meta:resourcekey="ListItemResource10"/>
+                                                                <telerik:RadComboBoxItem Value="5" meta:resourcekey="ListItemResource11"/>
+                                                                <telerik:RadComboBoxItem Value="6" meta:resourcekey="ListItemResource12"/>
+                                                                <telerik:RadComboBoxItem Value="7" meta:resourcekey="ListItemResource13"/>
+                                                                <telerik:RadComboBoxItem Value="8" meta:resourcekey="ListItemResource14"/>
+                                                                <telerik:RadComboBoxItem Value="9" meta:resourcekey="ListItemResource15"/>
+                                                                <telerik:RadComboBoxItem Value="10" meta:resourcekey="ListItemResource16"/>
+                                                                <telerik:RadComboBoxItem Value="11" meta:resourcekey="ListItemResource17"/>
+                                                                <telerik:RadComboBoxItem Value="12" meta:resourcekey="ListItemResource18"/>
+                                                                <telerik:RadComboBoxItem Value="13" meta:resourcekey="ListItemResource19"/>
+                                                                <telerik:RadComboBoxItem Value="14" meta:resourcekey="ListItemResource20"/>
+                                                                <telerik:RadComboBoxItem Value="15" meta:resourcekey="ListItemResource21"/>
+                                                            </Items>
+                                                        </telerik:RadComboBox>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td valign="top">
+                                            <telerik:RadGrid ID="grdDefects" runat="server" AutoGenerateColumns="False" CellPadding="4"
+                                                ForeColor="#333333" GridLines="None" Width="100%" DataKeyNames="nmetal_defect_key" 
+                                                OnPageIndexChanged="grdDefects_OnPageIndexChanged" ShowHeader="True" AllowPaging="True" 
+                                                PageSize="50" meta:resourcekey="grdDefectsResource1">
+                                        
+                                                <HeaderStyle  HorizontalAlign="Center" Font-Bold="True"/>
+                                                <PagerStyle Mode="NextPrevAndNumeric" PagerTextFormat="" />
+                                                
+                                        
+                                                <MasterTableView Width="100%">
+                                                    <NoRecordsTemplate/>
+                                                    <Columns>
+                                                        <telerik:GridHyperLinkColumn DataNavigateUrlFields="nmetal_defect_key" DataTextField="CNAME" HeaderText="Номер" meta:resourcekey="grdDefectsCol1"
+                                                            DataNavigateUrlFormatString="~/Modules/Evaluation_defects/EvaluationDefects.aspx?id={0}" />
+                                                        <telerik:GridBoundColumn DataField="nKm" HeaderText="Километраж" meta:resourcekey="grdDefectsCol2"/>
+                                                        <telerik:GridBoundColumn DataField="dictvalue" HeaderText="Тип дефекта" meta:resourcekey="grdDefectsCol3"/>
+                                                    </Columns>
+                                                </MasterTableView>
+                                                <ClientSettings>
+                                                    <Scrolling AllowScroll="True" UseStaticHeaders="True" SaveScrollPosition="true" FrozenColumnsCount="2"></Scrolling>
+                                                </ClientSettings>
+                                                <ItemStyle BackColor="#f9f9f9" />
+                                                <AlternatingItemStyle BackColor="#e8f0f5" />
+                                                <PagerStyle PageButtonCount="5"></PagerStyle>
+                                            </telerik:RadGrid>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td valign="top">
+                                           <asp:Label runat="server" Text="Количество дефектов" meta:resourcekey="Label35Resource1"/>
+                                                <asp:TextBox ID="txtDefectCount" runat="server" ReadOnly="True" Width="50px" meta:resourcekey="txtDefectCountResource1"/>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </fieldset>
+                            <script type="text/javascript">
+                                Sys.Application.add_load(ResizeRadGrid);
+                            </script>
+                        </ContentTemplate>
+                    </asp:UpdatePanel>
+                </td>
+                <td rowspan="2" valign="top" style="padding-left: 0; margin-top: 0;">
+                    <fieldset class="fsSetParam">
+                        <legend class="legendtext"><%=GetLocalResourceObject("fldtResult") %></legend>
+                        <table style="width: 100%;">
+                            <tr>
+                                <td valign="top" style="width: 202px; display: block; position: relative; ">
+                                    <asp:Image ID="ImagePrev" runat="server" BorderColor="Black" BorderStyle="Solid" Width="200" Height="200"
+                                               BorderWidth="1px" ImageUrl="Images/defect_type/empty.gif" meta:resourcekey="ImagePrevResource1" />
+                                    <asp:Panel ID="pnlImageInfo" runat="server" ToolTip="" CssClass="divInfo" Visible="False"/>
+                                </td>
+                                <td valign="top">
+                                    <telerik:RadGrid runat="server" ID="rgResult" ShowHeader="False">
+                                        <ItemStyle BackColor="#f9f9f9" Height="34" />
+                                        <AlternatingItemStyle BackColor="#e8f0f5" Height="33" />
+                                        <MasterTableView NoDetailRecordsText=""/>
+                                    </telerik:RadGrid>
+                                </td>
+                            </tr>
+                        </table>
+
+                        <fieldset>
+                            <legend class="legendtext"><%=GetLocalResourceObject("fldtRepaire") %></legend>
+                            <table class="resultTable" style="width: 100%;">
+                                <tr>
+                                    <td>
+                                        <asp:Label runat="server" Font-Bold="True" Text="Подтверждение шурфованем" 
+                                                   meta:resourcekey="Label2Resource1"/>
+                                    </td>
+                                    <td>
+                                        <asp:CheckBox ID="ckNBPITTING_CONFIRM" runat="server" style="margin-right: 30px;" 
+                                                      meta:resourcekey="ckNBPITTING_CONFIRMResource1" />
+                                    </td>
+                                    <td>
+                                        <asp:Label runat="server" Font-Bold="True" Text="Дата шурфования"
+                                                   meta:resourcekey="Label26Resource1"/>
+                                    </td>
+
+                                    <td>
+                                        <asp:Label ID="txtNBPITTING_CONFIRM" runat="server" Width="50px"
+                                                   meta:resourcekey="txtNBPITTING_CONFIRMResource1"/>
+                                    </td>
+                                    <td>
+                                        <asp:Label runat="server" Font-Bold="True" Text="Точность размеров (%)" 
+                                                   meta:resourcekey="Label27Resource1"/>
+                                    </td>
+                                    <td>
+                                        <asp:Label ID="txtNSIZE_PRECISION" runat="server" Width="50px" meta:resourcekey="txtNSIZE_PRECISIONResource1"/>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <asp:Label runat="server" Font-Bold="True" Text="Дефект устранен" meta:resourcekey="Label3Resource1"/>
+                                    </td>
+                                    <td>
+                                        <asp:CheckBox ID="ckNDEFECT_USTR" runat="server" meta:resourcekey="ckNDEFECT_USTRResource1" />
+                                    </td>
+                                    <td>
+                                        <asp:Label runat="server" Font-Bold="True" Text="Дата ремонта" meta:resourcekey="Label28Resource1"/>
+                                    </td>
+                                    <td>
+                                        <asp:Label ID="txtDDATA_USTR_DEFECT" runat="server" Width="50px" meta:resourcekey="txtDDATA_USTR_DEFECTResource1"/>
+                                    </td>
+                                    <td>
+                                        <asp:Label runat="server" Font-Bold="True" Text="Метод ремонта" meta:resourcekey="Label29Resource1"/>
+                                    </td>
+                                    <td>
+                                        <asp:Label ID="txtcMETOD_USTR_DEFECT_KEY" runat="server" Width="50px" 
+                                                   meta:resourcekey="txtcMETOD_USTR_DEFECT_KEYResource1"/>
+                                    </td>
+                                </tr>
+                            </table>
+                        </fieldset>
+
+                        <telerik:RadGrid runat="server" ID="rgResultInfo" ShowHeader="True" CssClass="typeDefect">
+                            <HeaderStyle HorizontalAlign="Center"/>
+                            <ItemStyle BackColor="#f9f9f9" Height="30" />
+                            <AlternatingItemStyle BackColor="#e8f0f5" Height="30" />
+                        </telerik:RadGrid>
+
+                        <fieldset>
+                            <legend class="legendtext"><%=GetLocalResourceObject("fldtPreasure") %></legend>
+                            <table style="width: 100%;" class="resultTable">
+                                <tr>
+                                    <td>
+                                        <asp:Label runat="server" Font-Bold="True" Text="Давление (МПа)" meta:resourcekey="Label31Resource1"/>
+                                    </td>
+                                    <td>
+                                        <asp:Label ID="txtPress" runat="server" Width="30px" meta:resourcekey="txtPressResource1"/>
+                                    </td>
+                                    <td>
+                                        <asp:Label runat="server" Font-Bold="True" Text="Температура (&deg;С)" meta:resourcekey="Label32Resource1"/>
+                                    </td>
+                                    <td>
+                                        <asp:Label ID="txtTempr" runat="server" Width="30px" meta:resourcekey="txtTemprResource1"/>
+                                    </td>
+                                    <td>
+                                        <asp:Label runat="server" Font-Bold="True" Text="Напряжение допустимое" meta:resourcekey="Label33Resource1"/>
+                                    </td>
+                                    <td>
+                                        <asp:Label ID="txtndsAllow" runat="server" Width="30px" meta:resourcekey="txtndsAllowResource1"/>
+                                    </td>
+                                    <td>
+                                        <asp:Label runat="server" Font-Bold="True" Text="Напряжение действующее" meta:resourcekey="Label34Resource1"/>
+                                    </td>
+                                    <td>
+                                        <asp:Label ID="txtNdsReal" runat="server" Width="30px" meta:resourcekey="txtNdsRealResource1"/>
+                                    </td>
+                                </tr>
+                            </table>
+                        </fieldset>
+                    </fieldset>
+                </td>
+            </tr>
+        </table>
+    </div>
+ 
+</asp:Content>

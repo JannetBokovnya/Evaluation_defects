@@ -1,0 +1,1604 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="asmepicResource1.AlternateText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="asmepicResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="asmeTextResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="asmeTextResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="BoundFieldResource1.AccessibleHeaderText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="BoundFieldResource1.FooterText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="BoundFieldResource1.HeaderText" xml:space="preserve">
+    <value>Километраж</value>
+  </data>
+  <data name="BoundFieldResource2.AccessibleHeaderText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="BoundFieldResource2.FooterText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="BoundFieldResource2.HeaderText" xml:space="preserve">
+    <value>Тип дефекта</value>
+  </data>
+  <data name="Button10Resource1.Text" xml:space="preserve">
+    <value>в GIS МГ дефекты</value>
+  </data>
+  <data name="Button10Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Button4Resource1.Text" xml:space="preserve">
+    <value>Отобрать дефекты</value>
+  </data>
+  <data name="Button4Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Button5Resource1.Text" xml:space="preserve">
+    <value>Выгрузить в Excel</value>
+  </data>
+  <data name="Button5Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Button6Resource1.Text" xml:space="preserve">
+    <value>Показать в таблице</value>
+  </data>
+  <data name="Button6Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Button7Resource1.Text" xml:space="preserve">
+    <value>в GIS МГ нить</value>
+  </data>
+  <data name="Button7Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Button8Resource1.Text" xml:space="preserve">
+    <value>в Google</value>
+  </data>
+  <data name="Button8Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Button9Resource1.Text" xml:space="preserve">
+    <value>Список трубы</value>
+  </data>
+  <data name="Button9Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="CheckBox1Resource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="CheckBox1Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ckbSlojDnvResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ckbSlojDnvResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ckNBPITTING_CONFIRMResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ckNBPITTING_CONFIRMResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ckNDEFECT_USTRResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ckNDEFECT_USTRResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="DDLFiltrResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="DDLMGResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="DDLSelectedListResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="DDLThreadResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="DDLUchastokResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="DDtranspModeResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="DNVAlonePicResource1.AlternateText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="DNVAlonePicResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="DNVAloneTextResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="DNVAloneTextResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="grdDefectsResource1.Caption" xml:space="preserve">
+    <value />
+  </data>
+  <data name="grdDefectsResource1.EmptyDataText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="grdDefectsResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="hiddenTargetControlForModalPopupResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="hiddenTargetControlForModalPopupResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="HyperLinkFieldResource1.AccessibleHeaderText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="HyperLinkFieldResource1.FooterText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="HyperLinkFieldResource1.HeaderText" xml:space="preserve">
+    <value>Номер</value>
+  </data>
+  <data name="HyperLinkFieldResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ImagePrevResource1.AlternateText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ImagePrevResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Label10Resource1.Text" xml:space="preserve">
+    <value>Дефекты</value>
+  </data>
+  <data name="Label10Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ResultInfo4" xml:space="preserve">
+    <value>Коэффициент безопасного давления</value>
+  </data>
+  <data name="Label11Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Label12Resource1.Text" xml:space="preserve">
+    <value>Тип дефекта</value>
+  </data>
+  <data name="Label12Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Label13Resource1.Text" xml:space="preserve">
+    <value>Расчетный тип</value>
+  </data>
+  <data name="Label13Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Label14Resource1.Text" xml:space="preserve">
+    <value>Длина (мм)</value>
+  </data>
+  <data name="Label14Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Label15Resource1.Text" xml:space="preserve">
+    <value>Ширина (мм)</value>
+  </data>
+  <data name="Label15Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Label17Resource1.Text" xml:space="preserve">
+    <value>Толщина трубы (мм)</value>
+  </data>
+  <data name="Label17Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Label18Resource1.Text" xml:space="preserve">
+    <value>Угловое расположение (час)</value>
+  </data>
+  <data name="Label18Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Label19Resource1.Text" xml:space="preserve">
+    <value>Расположение в металле</value>
+  </data>
+  <data name="Label19Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Label1Resource1.Text" xml:space="preserve">
+    <value>МГ</value>
+  </data>
+  <data name="Label1Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Label20Resource1.Text" xml:space="preserve">
+    <value>Глубина (мм)</value>
+  </data>
+  <data name="Label20Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Label21Resource1.Text" xml:space="preserve">
+    <value>Расстояние до левого шва (м)</value>
+  </data>
+  <data name="Label21Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Label22Resource1.Text" xml:space="preserve">
+    <value>Расстояние до правого шва (м)</value>
+  </data>
+  <data name="Label22Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Label23Resource1.Text" xml:space="preserve">
+    <value>Дата обнаружения дефекта</value>
+  </data>
+  <data name="Label23Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Label24Resource1.Text" xml:space="preserve">
+    <value>Описание стресс-коррозии</value>
+  </data>
+  <data name="Label24Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Label25Resource1.Text" xml:space="preserve">
+    <value>Текущее/Безопасное давление</value>
+  </data>
+  <data name="Label25Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Label26Resource1.Text" xml:space="preserve">
+    <value>Дата шурфования</value>
+  </data>
+  <data name="Label26Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Label27Resource1.Text" xml:space="preserve">
+    <value>Точность размеров (%)</value>
+  </data>
+  <data name="Label27Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Label28Resource1.Text" xml:space="preserve">
+    <value>Дата ремонта</value>
+  </data>
+  <data name="Label28Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Label29Resource1.Text" xml:space="preserve">
+    <value>Метод ремонта</value>
+  </data>
+  <data name="Label29Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Label2Resource1.Text" xml:space="preserve">
+    <value>Шурф</value>
+  </data>
+  <data name="Label2Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Label30Resource1.Text" xml:space="preserve">
+    <value>Дефект сложной формы</value>
+  </data>
+  <data name="Label30Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Label31Resource1.Text" xml:space="preserve">
+    <value>Давление (МПа)</value>
+  </data>
+  <data name="Label31Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Label32Resource1.Text" xml:space="preserve">
+    <value>Температура (°С)</value>
+  </data>
+  <data name="Label32Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Label33Resource1.Text" xml:space="preserve">
+    <value>Напряжение допустимое</value>
+  </data>
+  <data name="Label33Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Label34Resource1.Text" xml:space="preserve">
+    <value>Напряжение действующее</value>
+  </data>
+  <data name="Label34Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Label35Resource1.Text" xml:space="preserve">
+    <value>Количество дефектов</value>
+  </data>
+  <data name="Label35Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Label36Resource1.Text" xml:space="preserve">
+    <value>DNV</value>
+  </data>
+  <data name="Label36Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Label37Resource1.Text" xml:space="preserve">
+    <value>Нить </value>
+  </data>
+  <data name="Label37Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Label38Resource1.Text" xml:space="preserve">
+    <value>ВБН (Украина)</value>
+  </data>
+  <data name="Label38Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Label39Resource1.Text" xml:space="preserve">
+    <value>ВНИИГАЗ(Россия)</value>
+  </data>
+  <data name="Label39Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Label3Resource1.Text" xml:space="preserve">
+    <value>Рекомендованный ремонт</value>
+  </data>
+  <data name="Label3Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Label40Resource1.Text" xml:space="preserve">
+    <value>ASME</value>
+  </data>
+  <data name="Label40Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Label41Resource1.Text" xml:space="preserve">
+    <value>RSTRENG</value>
+  </data>
+  <data name="Label41Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Label43Resource1.Text" xml:space="preserve">
+    <value>Время до реагирования (год)</value>
+  </data>
+  <data name="Label43Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ResultInfo2" xml:space="preserve">
+    <value>Безопасное давление (МПа)</value>
+  </data>
+  <data name="Label44Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Label45Resource1.Text" xml:space="preserve">
+    <value>Предельное давление (МПа)</value>
+  </data>
+  <data name="Label45Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Label46Resource1.Text" xml:space="preserve">
+    <value>Безопасное давление (МПа)</value>
+  </data>
+  <data name="Label46Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Label47Resource1.Text" xml:space="preserve">
+    <value>Коэффициент безопасного давления</value>
+  </data>
+  <data name="Label47Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Label48Resource1.Text" xml:space="preserve">
+    <value>Допустимость дефекта</value>
+  </data>
+  <data name="Label48Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ResultInfo6" xml:space="preserve">
+    <value>Остаточный ресурс (год)</value>
+  </data>
+  <data name="Label49Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Label4Resource1.Text" xml:space="preserve">
+    <value>км,&amp;nbsp&amp;nbsp&amp;nbsp&amp;nbsp&amp;nbsp&amp;nbspдлина - </value>
+  </data>
+  <data name="Label4Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Label50Resource1.Text" xml:space="preserve">
+    <value>Реальный коэф. запаса</value>
+  </data>
+  <data name="Label50Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Label51Resource1.Text" xml:space="preserve">
+    <value>Допустимость дефекта</value>
+  </data>
+  <data name="Label51Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Label52Resource1.Text" xml:space="preserve">
+    <value>Коэф. интенсивности напряжений</value>
+  </data>
+  <data name="Label52Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Label53Resource1.Text" xml:space="preserve">
+    <value>Ссылочное напряжение (МПа)</value>
+  </data>
+  <data name="Label53Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Label54Resource1.Text" xml:space="preserve">
+    <value>Допустимый коэф. запаса</value>
+  </data>
+  <data name="Label54Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Label55Resource1.Text" xml:space="preserve">
+    <value>Назначаемый коэф. запаса</value>
+  </data>
+  <data name="Label55Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Label56Resource1.Text" xml:space="preserve">
+    <value>Рекомендации по реагированию</value>
+  </data>
+  <data name="Label56Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Label57Resource1.Text" xml:space="preserve">
+    <value>Сообщение об ошибке</value>
+  </data>
+  <data name="Label57Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Label58Resource1.Text" xml:space="preserve">
+    <value>Время до проведения шурфования (год)</value>
+  </data>
+  <data name="Label58Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Label59Resource1.Text" xml:space="preserve">
+    <value>Время, до проведения ремонта(год)</value>
+  </data>
+  <data name="Label59Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Label60Resource1.Text" xml:space="preserve">
+    <value>Опасность дефекта</value>
+  </data>
+  <data name="Label60Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Label61Resource1.Text" xml:space="preserve">
+    <value>Опасный менее (год)</value>
+  </data>
+  <data name="Label61Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Label62Resource1.Text" xml:space="preserve">
+    <value>Безопасный более (год)</value>
+  </data>
+  <data name="Label62Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Label63Resource1.Text" xml:space="preserve">
+    <value>Допустимость дефекта</value>
+  </data>
+  <data name="Label63Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Label64Resource1.Text" xml:space="preserve">
+    <value>Рекомендации по реагированию</value>
+  </data>
+  <data name="Label64Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Label65Resource1.Text" xml:space="preserve">
+    <value>Расчет ВТД</value>
+  </data>
+  <data name="Label65Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Label66Resource1.Text" xml:space="preserve">
+    <value>КБД</value>
+  </data>
+  <data name="Label66Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Label67Resource1.Text" xml:space="preserve">
+    <value>Max безопасное давление</value>
+  </data>
+  <data name="Label67Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Label68Resource1.Text" xml:space="preserve">
+    <value>Текущее/Безопасное давление</value>
+  </data>
+  <data name="Label68Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Label69Resource1.Text" xml:space="preserve">
+    <value>Дефект сложной формы</value>
+  </data>
+  <data name="Label69Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Label6Resource1.Text" xml:space="preserve">
+    <value>Предельное давление (МПа)</value>
+  </data>
+  <data name="Label6Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ResultInfo3" xml:space="preserve">
+    <value>Предельное давление (МПа)</value>
+  </data>
+  <data name="Label70Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Label71Resource1.Text" xml:space="preserve">
+    <value>Коэффициент запаса</value>
+  </data>
+  <data name="Label71Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Label72Resource1.Text" xml:space="preserve">
+    <value>Предельное давление</value>
+  </data>
+  <data name="Label72Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Label73Resource1.Text" xml:space="preserve">
+    <value>Коэффициент запаса</value>
+  </data>
+  <data name="Label73Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Label74Resource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Label74Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Label75Resource1.Text" xml:space="preserve">
+    <value>Max безопасное давление (МПа)</value>
+  </data>
+  <data name="Label75Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Label76Resource1.Text" xml:space="preserve">
+    <value>Разрушающее давление (МПа)</value>
+  </data>
+  <data name="Label76Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Label77Resource1.Text" xml:space="preserve">
+    <value>Предельное давление</value>
+  </data>
+  <data name="Label77Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Label78Resource1.Text" xml:space="preserve">
+    <value>Километраж</value>
+  </data>
+  <data name="Label78Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Label79Resource1.Text" xml:space="preserve">
+    <value>Тип дефекта</value>
+  </data>
+  <data name="Label79Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Label7Resource1.Text" xml:space="preserve">
+    <value>Участок: </value>
+  </data>
+  <data name="Label7Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Label80Resource1.Text" xml:space="preserve">
+    <value>Допустимый коэф. запаса</value>
+  </data>
+  <data name="Label80Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Label81Resource1.Text" xml:space="preserve">
+    <value>Километраж</value>
+  </data>
+  <data name="Label81Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Label82Resource1.Text" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="Label82Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Label83Resource1.Text" xml:space="preserve">
+    <value>км</value>
+  </data>
+  <data name="Label83Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Label84Resource1.Text" xml:space="preserve">
+    <value>Км, м</value>
+  </data>
+  <data name="Label84Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Label85Resource1.Text" xml:space="preserve">
+    <value>Км конца: </value>
+  </data>
+  <data name="Label85Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Label8Resource1.Text" xml:space="preserve">
+    <value>Режим</value>
+  </data>
+  <data name="Label8Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Label9Resource1.Text" xml:space="preserve">
+    <value>Безопасное давление (МПа)</value>
+  </data>
+  <data name="Label9Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblLimitResource1.Text" xml:space="preserve">
+    <value>Границы: </value>
+  </data>
+  <data name="lblLimitResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblView2ErrResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblView2ErrResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblView2ScriptResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblView2ScriptResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ListItemResource1.Text" xml:space="preserve">
+    <value>Выбрать из списка</value>
+  </data>
+  <data name="ListItemResource1.Value" xml:space="preserve">
+    <value>-1</value>
+  </data>
+  <data name="ListItemResource10.Text" xml:space="preserve">
+    <value>Трещины</value>
+  </data>
+  <data name="ListItemResource10.Value" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="ListItemResource11.Text" xml:space="preserve">
+    <value>Формы</value>
+  </data>
+  <data name="ListItemResource11.Value" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="ListItemResource12.Text" xml:space="preserve">
+    <value>Стресс-коррозия</value>
+  </data>
+  <data name="ListItemResource12.Value" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="ListItemResource13.Text" xml:space="preserve">
+    <value>Аномалии сварных швов</value>
+  </data>
+  <data name="ListItemResource13.Value" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="ListItemResource14.Text" xml:space="preserve">
+    <value>Недопустимые по DNV
+                                                </value>
+  </data>
+  <data name="ListItemResource14.Value" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="ListItemResource15.Text" xml:space="preserve">
+    <value>Недопустимые по ВБН</value>
+  </data>
+  <data name="ListItemResource15.Value" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="ListItemResource16.Text" xml:space="preserve">
+    <value>Недопустимые по ВНИГАЗ</value>
+  </data>
+  <data name="ListItemResource16.Value" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="ListItemResource17.Text" xml:space="preserve">
+    <value>Недопустимые по ASME</value>
+  </data>
+  <data name="ListItemResource17.Value" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="ListItemResource18.Text" xml:space="preserve">
+    <value>Недопустимые по RSTRENG</value>
+  </data>
+  <data name="ListItemResource18.Value" xml:space="preserve">
+    <value>12</value>
+  </data>
+  <data name="ListItemResource19.Text" xml:space="preserve">
+    <value>Недопустимые по данным ВТД</value>
+  </data>
+  <data name="ListItemResource19.Value" xml:space="preserve">
+    <value>13</value>
+  </data>
+  <data name="ListItemResource2.Text" xml:space="preserve">
+    <value>В границах ЛПУ</value>
+  </data>
+  <data name="ListItemResource2.Value" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="ListItemResource20.Text" xml:space="preserve">
+    <value>Отшурфованные</value>
+  </data>
+  <data name="ListItemResource20.Value" xml:space="preserve">
+    <value>14</value>
+  </data>
+  <data name="ListItemResource21.Text" xml:space="preserve">
+    <value>Отремонтированные</value>
+  </data>
+  <data name="ListItemResource21.Value" xml:space="preserve">
+    <value>15</value>
+  </data>
+  <data name="ListItemResource3.Text" xml:space="preserve">
+    <value>В границах участка ВТД</value>
+  </data>
+  <data name="ListItemResource3.Value" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="ListItemResource4.Text" xml:space="preserve">
+    <value>В границах технологического участка</value>
+  </data>
+  <data name="ListItemResource4.Value" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="ListItemResource5.Text" xml:space="preserve">
+    <value>Весь газопровод</value>
+  </data>
+  <data name="ListItemResource5.Value" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="ListItemResource6.Text" xml:space="preserve">
+    <value>Ручной выбор</value>
+  </data>
+  <data name="ListItemResource6.Value" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="ListItemResource7.Text" xml:space="preserve">
+    <value>Все дефекты</value>
+  </data>
+  <data name="ListItemResource7.Value" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="ListItemResource8.Text" xml:space="preserve">
+    <value>Недопустимые (все стандарты)</value>
+  </data>
+  <data name="ListItemResource8.Value" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="ListItemResource9.Text" xml:space="preserve">
+    <value>Коррозия</value>
+  </data>
+  <data name="ListItemResource9.Value" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="PageResource1.Title" xml:space="preserve">
+    <value>Оценка дефектов</value>
+  </data>
+  <data name="Panel1Resource1.GroupingText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Panel1Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Panel2Resource1.GroupingText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Panel2Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="programmaticPopupResource1.GroupingText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="programmaticPopupResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="RadTabResource1.AccessKey" xml:space="preserve">
+    <value />
+  </data>
+  <data name="RadTabResource1.DisabledImageUrl" xml:space="preserve">
+    <value />
+  </data>
+  <data name="RadTabResource1.HoveredImageUrl" xml:space="preserve">
+    <value />
+  </data>
+  <data name="RadTabResource1.ImageUrl" xml:space="preserve">
+    <value />
+  </data>
+  <data name="RadTabResource1.NavigateUrl" xml:space="preserve">
+    <value />
+  </data>
+  <data name="RadTabResource1.SelectedImageUrl" xml:space="preserve">
+    <value />
+  </data>
+  <data name="RadTabResource1.Text" xml:space="preserve">
+    <value>Сводный расчет</value>
+  </data>
+  <data name="RadTabResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="RadTabResource1.Value" xml:space="preserve">
+    <value />
+  </data>
+  <data name="RadTabResource2.AccessKey" xml:space="preserve">
+    <value />
+  </data>
+  <data name="RadTabResource2.DisabledImageUrl" xml:space="preserve">
+    <value />
+  </data>
+  <data name="RadTabResource2.HoveredImageUrl" xml:space="preserve">
+    <value />
+  </data>
+  <data name="RadTabResource2.ImageUrl" xml:space="preserve">
+    <value />
+  </data>
+  <data name="RadTabResource2.NavigateUrl" xml:space="preserve">
+    <value />
+  </data>
+  <data name="RadTabResource2.SelectedImageUrl" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ASME" xml:space="preserve">
+    <value>ASME</value>
+  </data>
+  <data name="RadTabResource2.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="RadTabResource2.Value" xml:space="preserve">
+    <value />
+  </data>
+  <data name="RadTabResource3.AccessKey" xml:space="preserve">
+    <value />
+  </data>
+  <data name="RadTabResource3.DisabledImageUrl" xml:space="preserve">
+    <value />
+  </data>
+  <data name="RadTabResource3.HoveredImageUrl" xml:space="preserve">
+    <value />
+  </data>
+  <data name="RadTabResource3.ImageUrl" xml:space="preserve">
+    <value />
+  </data>
+  <data name="RadTabResource3.NavigateUrl" xml:space="preserve">
+    <value />
+  </data>
+  <data name="RadTabResource3.SelectedImageUrl" xml:space="preserve">
+    <value />
+  </data>
+  <data name="DNV" xml:space="preserve">
+    <value>DNV</value>
+  </data>
+  <data name="RadTabResource3.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="RadTabResource3.Value" xml:space="preserve">
+    <value />
+  </data>
+  <data name="RadTabResource4.AccessKey" xml:space="preserve">
+    <value />
+  </data>
+  <data name="RadTabResource4.DisabledImageUrl" xml:space="preserve">
+    <value />
+  </data>
+  <data name="RadTabResource4.HoveredImageUrl" xml:space="preserve">
+    <value />
+  </data>
+  <data name="RadTabResource4.ImageUrl" xml:space="preserve">
+    <value />
+  </data>
+  <data name="RadTabResource4.NavigateUrl" xml:space="preserve">
+    <value />
+  </data>
+  <data name="RadTabResource4.SelectedImageUrl" xml:space="preserve">
+    <value />
+  </data>
+  <data name="RSTRENG" xml:space="preserve">
+    <value>RSTRENG</value>
+  </data>
+  <data name="RadTabResource4.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="RadTabResource4.Value" xml:space="preserve">
+    <value />
+  </data>
+  <data name="RadTabStrip1Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rstrengpicResource1.AlternateText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rstrengpicResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rstrengTextResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rstrengTextResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="showModalPopupClientButtonResource1.Text" xml:space="preserve">
+    <value>Подсказка</value>
+  </data>
+  <data name="showModalPopupClientButtonResource1.ToolTip" xml:space="preserve">
+    <value>Нажать для получения помощи</value>
+  </data>
+  <data name="TextBox29Resource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="TextBox29Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="TextBox30Resource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="TextBox30Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="TextBox45Resource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="TextBox45Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtAnglePlaceResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtAnglePlaceResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtCalcTypeResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtCalcTypeResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtcMETOD_USTR_DEFECT_KEYResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtcMETOD_USTR_DEFECT_KEYResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtcoverAsmeResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtcoverAsmeResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtcoverRstrengResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtcoverRstrengResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtCRECOMM00Resource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtCRECOMM00Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtCRECOMMrstreng11Resource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtCRECOMMrstreng11Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtDateFoundResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtDateFoundResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtDDATA_USTR_DEFECTResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtDDATA_USTR_DEFECTResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtDefectCountResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtDefectCountResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtDefectTypeResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtDefectTypeResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtDepthResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtDepthResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtDescriptionStressCorozResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtDescriptionStressCorozResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtDistToLeftResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtDistToLeftResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtDistToRightResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtDistToRightResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtKBDDNVAloneResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtKBDDNVAloneResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtKmThreadEndResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtKmThreadEndResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtKmThreadStartResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtKmThreadStartResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtkofDnvAloneResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtkofDnvAloneResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtkofDnvResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtkofDnvResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtLenResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtLenResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtLenThreadResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtLenThreadResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtMaxPresDnvAloneResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtMaxPresDnvAloneResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtMaxPresDnvResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtMaxPresDnvResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtMaxpresRstrengResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtMaxpresRstrengResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtNallowable_PressResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtNallowable_PressResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtNBPITTING_CONFIRMResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtNBPITTING_CONFIRMResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtndsAllowResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtndsAllowResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtNdsRealResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtNdsRealResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtnMaxPresAsmeResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtnMaxPresAsmeResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtnpress_coefResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtnpress_coefResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtNSIZE_PRECISIONResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtNSIZE_PRECISIONResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtPlaceInMetalResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtPlaceInMetalResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtPressResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtPressResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtRecAsmeResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtRecAsmeResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtrecRstrengResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtrecRstrengResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtSafetyPresDnvAloneResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtSafetyPresDnvAloneResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtSafetyPresDnvResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtSafetyPresDnvResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtSharedKmEndResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtSharedKmEndResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtSharedKmStartResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtSharedKmStartResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtTemprResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtTemprResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtThinknessResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtThinknessResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtTitulASMEResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtTitulASMEResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtTitulRstrngResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtTitulRstrngResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtVBN1Resource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtVBN1Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtVBN2Resource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtVBN2Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtVBN3Resource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtVBN3Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtVBN4Resource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtVBN4Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtVBN5Resource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtVBN5Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtVBN6Resource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtVBN6Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtVBN7Resource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtVBN7Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtVni1Resource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtVni1Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtVni2Resource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtVni2Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtVni3Resource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtVni3Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtVni4Resource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtVni4Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtVni5Resource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtVni5Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtWidthResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtWidthResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="VBNPicResource1.AlternateText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="VBNPicResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="VBNTextResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="VBNTextResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="VniPicResource1.AlternateText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="VniPicResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="VniTextResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="VniTextResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="VtdPicResource1.AlternateText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="VtdPicResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="VTDTextResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="VTDTextResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Gazprom" xml:space="preserve">
+    <value>Газпром</value>
+  </data>
+  <data name="ResultInfo1" xml:space="preserve">
+    <value>Допустимость дефекта</value>
+  </data>
+  <data name="ResultInfo5" xml:space="preserve">
+    <value>Коэффициент запаса</value>
+  </data>
+  <data name="lblGazpromTitleResource1.Text" xml:space="preserve">
+    <value>Газпром</value>
+  </data>
+  <data name="ZChangeArea" xml:space="preserve">
+    <value />
+  </data>
+  <data name="DDLMGResource1.EmptyMessage" xml:space="preserve">
+    <value>Выбрать</value>
+  </data>
+  <data name="DDLThreadResource1.EmptyMessage" xml:space="preserve">
+    <value>Выбрать протяженный объект...</value>
+  </data>
+  <data name="fldtChooseArea" xml:space="preserve">
+    <value>Выбор участка для отображения</value>
+  </data>
+  <data name="fldtDefectsTable" xml:space="preserve">
+    <value>Таблица дефектов</value>
+  </data>
+  <data name="fldtPreasure" xml:space="preserve">
+    <value>Нагрузка на газопровод</value>
+  </data>
+  <data name="fldtRepaire" xml:space="preserve">
+    <value>Шурфование и ремонт</value>
+  </data>
+  <data name="fldtResult" xml:space="preserve">
+    <value>Результаты</value>
+  </data>
+  <data name="lblInPermissible" xml:space="preserve">
+    <value>Недопустимый</value>
+  </data>
+  <data name="lblMiddlePermissible" xml:space="preserve">
+    <value>Условно недопустимый</value>
+  </data>
+  <data name="lblPermissible" xml:space="preserve">
+    <value>Допустимый</value>
+  </data>
+  <data name="CodingDefect" xml:space="preserve">
+    <value>Кодировка дефекта</value>
+  </data>
+  <data name="EncodingDefect" xml:space="preserve">
+    <value>Кодировка дефекта</value>
+  </data>
+  <data name="grdDefectsCol1.HeaderText" xml:space="preserve">
+    <value>№ дефекта</value>
+  </data>
+  <data name="grdDefectsCol2.HeaderText" xml:space="preserve">
+    <value>Километраж, м</value>
+  </data>
+  <data name="grdDefectsCol3.HeaderText" xml:space="preserve">
+    <value>Тип дефекта</value>
+  </data>
+  <data name="Vtd" xml:space="preserve">
+    <value>ВТД</value>
+  </data>
+  <data name="grdDefectsResource1.PagerStyle-FirstPageToolTip" xml:space="preserve">
+    <value>Первая страница</value>
+  </data>
+  <data name="grdDefectsResource1.PagerStyle-LastPageToolTip" xml:space="preserve">
+    <value>Последняя страница</value>
+  </data>
+  <data name="grdDefectsResource1.PagerStyle-NextPagesToolTip" xml:space="preserve">
+    <value>Следущие страницы</value>
+  </data>
+  <data name="grdDefectsResource1.PagerStyle-NextPageToolTip" xml:space="preserve">
+    <value>Следущая страница</value>
+  </data>
+  <data name="grdDefectsResource1.PagerStyle-PrevPagesToolTip" xml:space="preserve">
+    <value>Предыдущие страницы</value>
+  </data>
+  <data name="grdDefectsResource1.PagerStyle-PrevPageToolTip" xml:space="preserve">
+    <value>Предыдущая страница</value>
+  </data>
+  <data name="cAOS.gif" xml:space="preserve">
+    <value>α – максимальная глубина дефекта
+l – длина дефекта</value>
+  </data>
+  <data name="cCC.gif" xml:space="preserve">
+    <value>α – максимальная глубина дефекта
+b – ширина дефекта
+l – длина дефекта</value>
+  </data>
+  <data name="cCOS.gif" xml:space="preserve">
+    <value>α – максимальная глубина дефекта
+l – ширина дефекта</value>
+  </data>
+  <data name="cCT.gif" xml:space="preserve">
+    <value>l – ширина дефекта</value>
+  </data>
+  <data name="cGC.gif" xml:space="preserve">
+    <value>α – максимальная глубина дефекта</value>
+  </data>
+  <data name="cLC.gif" xml:space="preserve">
+    <value>α – максимальная глубина дефекта
+b – ширина дефекта
+l – длина дефекта</value>
+  </data>
+  <data name="cproblem.gif" xml:space="preserve">
+    <value>дефект не определен</value>
+  </data>
+  <data name="cVmt.gif" xml:space="preserve">
+    <value>b – ширина дефекта
+l – длина дефекта
+w – глубина вмятины</value>
+  </data>
+  <data name="cZab.gif" xml:space="preserve">
+    <value>b – ширина дефекта
+l – длина дефекта
+w – глубина выбоины</value>
+  </data>
+  <data name="btnShowDefectsResource1.Text" xml:space="preserve">
+    <value>Таблица дефектов</value>
+  </data>
+  <data name="DDtranspModeResource1.EmptyMessage" xml:space="preserve">
+    <value>Выберите режим транспортировки...</value>
+  </data>
+  <data name="txtSharedKmEndResource1.EmptyMessage" xml:space="preserve">
+    <value>Конец, м...</value>
+  </data>
+  <data name="txtSharedKmStartResource1.EmptyMessage" xml:space="preserve">
+    <value>Начало, м...</value>
+  </data>
+  <data name="fldDetalCalc" xml:space="preserve">
+    <value>Детали расчетов</value>
+  </data>
+  <data name="Label101Resource1.Text" xml:space="preserve">
+    <value>Рассчитано</value>
+  </data>
+  <data name="Label102Resource1.Text" xml:space="preserve">
+    <value>Дата расчета</value>
+  </data>
+  <data name="Label103Resource1.Text" xml:space="preserve">
+    <value>Ремонт</value>
+  </data>
+</root>
